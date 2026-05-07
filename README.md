@@ -12,6 +12,7 @@ A terminal-based turtle graphics package for working through the [Think Julia](h
 
 ```julia
 using ThinkJuliaTurtles
+using UnicodePlots
 
 🐢 = Turtle()
 @draw begin
