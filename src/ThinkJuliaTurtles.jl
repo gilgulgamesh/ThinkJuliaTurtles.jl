@@ -5,8 +5,8 @@ for name in names(UnicodePlots)
     @eval export $name
 end
 
-TURTLE_WIDTH = Ref(80)
-TURTLE_HEIGHT = Ref(40)
+TURTLE_WIDTH = Ref(100)
+TURTLE_HEIGHT = Ref(50)
 
 export Turtle, forward, turn, penup, pendown, @draw
 
