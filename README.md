@@ -5,7 +5,7 @@ A terminal-based turtle graphics package for working through the [Think Julia](h
 ## Installation
 
 ```julia
-] add https://github.com/yourusername/ThinkJuliaTurtles.jl
+] add https://github.com/gilgulgamesh/ThinkJuliaTurtles.jl
 ```
 
 ## Usage
