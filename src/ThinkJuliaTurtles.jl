@@ -17,7 +17,7 @@ Turtle() = Turtle(0.0, 0.0, 90.0, true, [0.0], [0.0])
 
 function turtle_marker(angle)
     a = mod(angle, 360)
-    markers = ['▶', '↗', '▲', '↖', '◀', '↙', '▼', '↘']
+    markers = ['▷', '◹', '△', '◸', '◁', '◺', '▽', '◿']
     idx = round(Int, a / 45) % 8 + 1
     return markers[idx]
 end
