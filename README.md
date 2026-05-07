@@ -1,6 +1,6 @@
 # ThinkJuliaTurtles.jl
 
-A terminal-based turtle graphics package for working through the [Think Julia](https://benlauwens.github.io/ThinkJulia.jl/latest/book.html) book. Replaces the broken `ThinkJulia.jl` / Luxor turtle graphics with a UnicodePlots-based alternative that actually works on modern Julia.
+A terminal-based turtle graphics package for working through the [Think Julia](https://BenLauwens.github.io/ThinkJulia.jl/latest/book.html) book. Replaces the broken `ThinkJulia.jl` / Luxor turtle graphics with a UnicodePlots-based alternative that actually works on modern Julia.
 
 ## Installation
 
@@ -36,3 +36,6 @@ end
 - The turtle is shown as a directional character (▲▶▼◀ etc.) in green
 - Drawing bounds are -200 to 200 in both x and y
 - Requires a terminal that supports Unicode and ANSI escape codes (Windows Terminal works well)
+
+
+Made by llm mostly
