@@ -1,0 +1,11 @@
+name = "ThinkJuliaTurtles"
+uuid = "eb3f9495-12e4-4b59-9f66-a186f1e0379a"
+authors = ["Your Name <you@example.com>"]
+version = "0.1.0"
+
+[deps]
+UnicodePlots = "b8865327-cd53-5732-bb35-84acbb429228"
+
+[compat]
+julia = "1.6"
+UnicodePlots = "3"
