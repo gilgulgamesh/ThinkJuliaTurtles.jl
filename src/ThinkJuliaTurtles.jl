@@ -51,7 +51,7 @@ p = lineplot(t.xs, t.ys, xlim=(-200, 200), ylim=(-200, 200),
              width=TURTLE_WIDTH[], height=TURTLE_HEIGHT[])
         UnicodePlots.scatterplot!(p, [t.x], [t.y],
                                   marker=string(turtle_marker(t.angle)),
-                                  color=:green)
+                                  color=:yellow)
         display(p)
         flush(stdout)
         sleep(0.01)
