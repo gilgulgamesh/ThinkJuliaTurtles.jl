@@ -1,6 +1,9 @@
 module ThinkJuliaTurtles
 
 using UnicodePlots
+for name in names(UnicodePlots)
+    @eval export $name
+end
 
 export Turtle, forward, turn, penup, pendown, @draw
 
