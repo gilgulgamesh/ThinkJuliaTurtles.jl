@@ -5,7 +5,17 @@ for name in names(UnicodePlots)
     @eval export $name
 end
 
+TURTLE_WIDTH = Ref(80)
+TURTLE_HEIGHT = Ref(40)
+
 export Turtle, forward, turn, penup, pendown, @draw
+
+export TURTLE_WIDTH, TURTLE_HEIGHT, set_turtle_size
+
+function set_turtle_size(w, h)
+    TURTLE_WIDTH[] = w
+    TURTLE_HEIGHT[] = h
+end
 
 mutable struct Turtle
     x::Float64
@@ -37,11 +47,8 @@ function forward(t::Turtle, dist)
         end
         print("\e[2J\e[H")
         flush(stdout)
-rows, cols = displaysize(stdout)
-w = (cols ÷ 2) * 1.6 - 5
-h = w ÷ 2
 p = lineplot(t.xs, t.ys, xlim=(-200, 200), ylim=(-200, 200),
-             width=w, height=h)
+             width=TURTLE_WIDTH[], height=TURTLE_HEIGHT[])
         UnicodePlots.scatterplot!(p, [t.x], [t.y],
                                   marker=string(turtle_marker(t.angle)),
                                   color=:green)
