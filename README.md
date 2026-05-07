@@ -9,10 +9,23 @@ A terminal-based turtle graphics package for working through the [Think Julia](h
 ```
 
 ## Usage
+## Usage
+
+First install and load UnicodePlots:
 
 ```julia
-using ThinkJuliaTurtles
+] add UnicodePlots
 using UnicodePlots
+```
+
+Then install and use ThinkJuliaTurtles:
+
+```julia
+] add https://github.com/gilgulgamesh/ThinkJuliaTurtles.jl
+using ThinkJuliaTurtles
+```
+```julia
+e.g.
 
 🐢 = Turtle()
 @draw begin
