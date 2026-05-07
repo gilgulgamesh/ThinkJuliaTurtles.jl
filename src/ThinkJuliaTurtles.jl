@@ -38,8 +38,8 @@ function forward(t::Turtle, dist)
         print("\e[2J\e[H")
         flush(stdout)
 rows, cols = displaysize(stdout)
-w = cols - 5
-h = min(rows - 5, w ÷ 2)
+w = (cols ÷ 2) - 5
+h = w ÷ 2
 p = lineplot(t.xs, t.ys, xlim=(-200, 200), ylim=(-200, 200),
              width=w, height=h)
         UnicodePlots.scatterplot!(p, [t.x], [t.y],
